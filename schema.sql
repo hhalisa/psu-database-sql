@@ -1,3 +1,5 @@
+BEGIN TRANSACTION;
+
 CREATE TABLE sailor(
 	sid INTEGER,
 	sname VARCHAR(50),
@@ -21,4 +23,4 @@ CREATE TABLE reservation(
 	CONSTRAINT reservation_has_sid_fk FOREIGN KEY (sid) REFERENCES sailor(sid) ON DELETE CASCADE,
 	CONSTRAINT reservation_has_bid_fk FOREIGN KEY (bid) REFERENCES boat(bid) ON DELETE CASCADE);
 
-
+COMMIT TRANSACTION;
