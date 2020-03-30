@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS reservation;
+
+DROP TABLE IF EXISTS sailor;
+
+DROP TABLE IF EXISTS boat;
