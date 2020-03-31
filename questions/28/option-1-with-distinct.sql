@@ -1,0 +1,2 @@
+SELECT COUNT(DISTINCT s.sid)
+FROM sailor s;
